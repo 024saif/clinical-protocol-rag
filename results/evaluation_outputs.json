@@ -1,0 +1,1518 @@
+[
+  {
+    "case_id": "CASE_01_DENGUE",
+    "case_type": "ordinary",
+    "protocol": "Dengue",
+    "mode": "baseline",
+    "patient_text": "A 24-year-old patient has high fever for 3 days, severe headache, pain behind the eyes, body ache and rash. No vomiting, bleeding or altered consciousness is reported.",
+    "elapsed_seconds": 0.1432,
+    "generated_response": "Probable Diagnosis:\nProbable Dengue. Consider dengue fever as a probable diagnosis when the clinical presentation is compatible; do not treat this card alone as diagnostic confirmation.\n\nInvestigations:\n- Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.\n- Select chikungunya testing according to the day of illness. Use real-time RT-PCR within 5 days of symptom onset. Viral-specific IgM can be tested from 5 to 28 days after fever onset. A four-fold rise in IgG can be assessed using samples collected at least three weeks apart, with the first sample after day 7. Routine investigations may include CBC, C-reactive protein and SGPT.\n\nMedication Planning:\nNo medication or management card was retrieved in the top results.\n\nAdvice:\nNo specific advice card was retrieved in the top results.\n\nMissing Information:\nBaseline retrieval does not perform explicit applicability or missing-information checks.\n\nEvidence:\n- DENGUE_DIAG_001: National Guideline for Clinical Management of Dengue (5th Edition 2025), page 27\n- CHIK_DIAG_001: National Guideline on Clinical Management of Chikungunya Fever (First Published 15 May 2017), page 11\n- DENGUE_WARN_001: National Guideline for Clinical Management of Dengue (5th Edition 2025), page 28\n- CHOLERA_ASSESS_001: Clinical tools for cholera treatment facilities (WHO 2024), page 6\n- CHIK_INV_001: National Guideline on Clinical Management of Chikungunya Fever (First Published 15 May 2017), page 22",
+    "expected_checklist": {
+      "probable_diagnosis": "Dengue",
+      "should_retrieve_diagnosis_card": true,
+      "should_consider_warning_signs": true,
+      "should_recommend_investigation": true,
+      "must_not_confirm_without_supported_evidence": true
+    },
+    "retrieved_cards": [
+      {
+        "score": 0.5559083223342896,
+        "card_id": "DENGUE_DIAG_001",
+        "disease": "Dengue",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider dengue fever as a probable diagnosis when the clinical presentation is compatible; do not treat this card alone as diagnostic confirmation.",
+        "source": {
+          "title": "National Guideline for Clinical Management of Dengue",
+          "version": "5th Edition 2025",
+          "pdf_page": 27
+        }
+      },
+      {
+        "score": 0.5070999264717102,
+        "card_id": "CHIK_DIAG_001",
+        "disease": "Chikungunya",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider chikungunya when there is sudden onset of fever with joint manifestations and rash. A possible case meets clinical criteria; a probable case meets both clinical and epidemiological criteria; a confirmed case requires laboratory criteria.",
+        "source": {
+          "title": "National Guideline on Clinical Management of Chikungunya Fever",
+          "version": "First Published 15 May 2017",
+          "pdf_page": 11
+        }
+      },
+      {
+        "score": 0.4584082067012787,
+        "card_id": "DENGUE_WARN_001",
+        "disease": "Dengue",
+        "category": "warning_signs",
+        "recommended_action": "Identify dengue warning signs and consider escalation or closer clinical assessment when present.",
+        "source": {
+          "title": "National Guideline for Clinical Management of Dengue",
+          "version": "5th Edition 2025",
+          "pdf_page": 28
+        }
+      },
+      {
+        "score": 0.42701077461242676,
+        "card_id": "CHOLERA_ASSESS_001",
+        "disease": "Cholera",
+        "category": "dehydration_assessment",
+        "recommended_action": "Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 6
+        }
+      },
+      {
+        "score": 0.4056447744369507,
+        "card_id": "CHIK_INV_001",
+        "disease": "Chikungunya",
+        "category": "investigation",
+        "recommended_action": "Select chikungunya testing according to the day of illness. Use real-time RT-PCR within 5 days of symptom onset. Viral-specific IgM can be tested from 5 to 28 days after fever onset. A four-fold rise in IgG can be assessed using samples collected at least three weeks apart, with the first sample after day 7. Routine investigations may include CBC, C-reactive protein and SGPT.",
+        "source": {
+          "title": "National Guideline on Clinical Management of Chikungunya Fever",
+          "version": "First Published 15 May 2017",
+          "pdf_page": 22
+        }
+      }
+    ]
+  },
+  {
+    "case_id": "CASE_01_DENGUE",
+    "case_type": "ordinary",
+    "protocol": "Dengue",
+    "mode": "improved",
+    "patient_text": "A 24-year-old patient has high fever for 3 days, severe headache, pain behind the eyes, body ache and rash. No vomiting, bleeding or altered consciousness is reported.",
+    "elapsed_seconds": 0.0309,
+    "generated_response": "Probable Diagnosis:\nProbable Dengue. Consider dengue fever as a probable diagnosis when the clinical presentation is compatible; do not treat this card alone as diagnostic confirmation. Differential diagnosis retrieved: Chikungunya.\n\nInvestigations:\n- At the first visit, perform CBC and dengue NS1 antigen or anti-dengue antibody testing according to the day of illness. If the patient presents within 5 days of fever, obtain baseline CBC, haematocrit, NS1 antigen, SGOT and SGPT.\n\nMedication Planning:\nNo medication or treatment plan was explicitly supported by the currently applicable cards.\n\nAdvice:\nNo additional patient advice was explicitly supported by the currently applicable cards.\n\nMissing Information:\nNo major applicability information was identified as missing.\n\nEvidence:\n- DENGUE_DIAG_001: National Guideline for Clinical Management of Dengue (5th Edition 2025), page 27\n- DENGUE_WARN_001: National Guideline for Clinical Management of Dengue (5th Edition 2025), page 28\n- DENGUE_INV_001: National Guideline for Clinical Management of Dengue (5th Edition 2025), pages 38, 41",
+    "expected_checklist": {
+      "probable_diagnosis": "Dengue",
+      "should_retrieve_diagnosis_card": true,
+      "should_consider_warning_signs": true,
+      "should_recommend_investigation": true,
+      "must_not_confirm_without_supported_evidence": true
+    },
+    "primary_disease": "Dengue",
+    "patient_facts": {},
+    "accepted_cards": [
+      {
+        "score": 0.5559083223342896,
+        "card_id": "DENGUE_DIAG_001",
+        "disease": "Dengue",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider dengue fever as a probable diagnosis when the clinical presentation is compatible; do not treat this card alone as diagnostic confirmation.",
+        "advice": [],
+        "medication": [],
+        "conditions": [],
+        "missing_fields": [
+          "Laboratory confirmation and differential diagnosis may still be required depending on the case."
+        ],
+        "source": {
+          "title": "National Guideline for Clinical Management of Dengue",
+          "version": "5th Edition 2025",
+          "pdf_page": 27
+        },
+        "applicability_reason": "No special applicability rule."
+      },
+      {
+        "score": 0.4584082067012787,
+        "card_id": "DENGUE_WARN_001",
+        "disease": "Dengue",
+        "category": "warning_signs",
+        "recommended_action": "Identify dengue warning signs and consider escalation or closer clinical assessment when present.",
+        "advice": [],
+        "medication": [],
+        "conditions": [
+          "intense continuous abdominal pain",
+          "persistent vomiting",
+          "fluid accumulation",
+          "mucosal bleeding",
+          "altered mental status",
+          "hepatomegaly",
+          "progressive increase of haematocrit"
+        ],
+        "missing_fields": [
+          "If warning-sign status is unknown, the system should not assume absence."
+        ],
+        "source": {
+          "title": "National Guideline for Clinical Management of Dengue",
+          "version": "5th Edition 2025",
+          "pdf_page": 28
+        },
+        "applicability_reason": "No special applicability rule."
+      },
+      {
+        "score": 0.39270734786987305,
+        "card_id": "DENGUE_INV_001",
+        "disease": "Dengue",
+        "category": "investigation",
+        "recommended_action": "At the first visit, perform CBC and dengue NS1 antigen or anti-dengue antibody testing according to the day of illness. If the patient presents within 5 days of fever, obtain baseline CBC, haematocrit, NS1 antigen, SGOT and SGPT.",
+        "advice": [],
+        "medication": [],
+        "conditions": [
+          "test selection depends on day of illness"
+        ],
+        "missing_fields": [
+          "day of illness should be known to select the most appropriate dengue diagnostic test"
+        ],
+        "source": {
+          "title": "National Guideline for Clinical Management of Dengue",
+          "version": "5th Edition 2025",
+          "pdf_page": [
+            38,
+            41
+          ]
+        },
+        "applicability_reason": "No special applicability rule."
+      }
+    ],
+    "rejected_cards": [],
+    "differential_diagnoses": [
+      {
+        "score": 0.5070999264717102,
+        "card_id": "CHIK_DIAG_001",
+        "disease": "Chikungunya",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider chikungunya when there is sudden onset of fever with joint manifestations and rash. A possible case meets clinical criteria; a probable case meets both clinical and epidemiological criteria; a confirmed case requires laboratory criteria.",
+        "source": {
+          "title": "National Guideline on Clinical Management of Chikungunya Fever",
+          "version": "First Published 15 May 2017",
+          "pdf_page": 11
+        }
+      }
+    ]
+  },
+  {
+    "case_id": "CASE_02_HYPERTENSION",
+    "case_type": "ordinary",
+    "protocol": "Hypertension",
+    "mode": "baseline",
+    "patient_text": "A 55-year-old patient has repeated blood pressure readings around 150/95 mmHg over several visits. There are no acute emergency symptoms.",
+    "elapsed_seconds": 0.028,
+    "generated_response": "Probable Diagnosis:\nProbable Hypertension. Confirm hypertension using repeated blood pressure measurements rather than a single office reading. In general, use at least three BP measurements per visit across two to three visits at 1-4 week intervals. A diagnosis may be made at a single visit if BP is at least 160/100 mmHg or there is evidence of hypertension-mediated organ damage.\n\nInvestigations:\n- Perform baseline investigations for hypertension including serum sodium, potassium, creatinine with eGFR, urine dipstick, and 12-lead ECG. If available, obtain lipid profile and fasting glucose. Additional investigations should depend on suspicion of secondary hypertension or hypertension-mediated organ damage.\n- Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.\n\nMedication Planning:\n- Use the national primary-care stepwise antihypertensive protocol: start amlodipine 5 mg once daily; if target blood pressure is not reached after review, add losartan 50 mg once daily; if still uncontrolled, add hydrochlorothiazide 12.5 mg once daily and consider referral when appropriate.\n\nAdvice:\n- Review monthly after starting or changing antihypertensive treatment until target blood pressure is reached; once controlled, follow up every 3-6 months. Refer to an appropriate specialist when accelerated or malignant hypertension, suspected secondary hypertension, resistant hypertension, recent target-organ damage, pregnancy, or age under 18 years is present.\n\nMissing Information:\nBaseline retrieval does not perform explicit applicability or missing-information checks.\n\nEvidence:\n- HTN_DIAG_001: National Guideline on Hypertension (2nd Edition, November 2023), page 46\n- HTN_INV_001: National Guideline on Hypertension (2nd Edition, November 2023), page 51\n- HTN_ADVICE_001: National Guideline on Hypertension (2nd Edition, November 2023), page 65\n- HTN_MGMT_001: National Guideline on Hypertension (2nd Edition, November 2023), page 64\n- CHOLERA_ASSESS_001: Clinical tools for cholera treatment facilities (WHO 2024), page 6",
+    "expected_checklist": {
+      "probable_diagnosis": "Hypertension",
+      "should_retrieve_diagnosis_card": true,
+      "should_recommend_baseline_investigations": true,
+      "should_not_treat_as_single_reading_confirmation": true
+    },
+    "retrieved_cards": [
+      {
+        "score": 0.6765568852424622,
+        "card_id": "HTN_DIAG_001",
+        "disease": "Hypertension",
+        "category": "probable_diagnosis",
+        "recommended_action": "Confirm hypertension using repeated blood pressure measurements rather than a single office reading. In general, use at least three BP measurements per visit across two to three visits at 1-4 week intervals. A diagnosis may be made at a single visit if BP is at least 160/100 mmHg or there is evidence of hypertension-mediated organ damage.",
+        "source": {
+          "title": "National Guideline on Hypertension",
+          "version": "2nd Edition, November 2023",
+          "pdf_page": 46
+        }
+      },
+      {
+        "score": 0.4620662331581116,
+        "card_id": "HTN_INV_001",
+        "disease": "Hypertension",
+        "category": "investigation",
+        "recommended_action": "Perform baseline investigations for hypertension including serum sodium, potassium, creatinine with eGFR, urine dipstick, and 12-lead ECG. If available, obtain lipid profile and fasting glucose. Additional investigations should depend on suspicion of secondary hypertension or hypertension-mediated organ damage.",
+        "source": {
+          "title": "National Guideline on Hypertension",
+          "version": "2nd Edition, November 2023",
+          "pdf_page": 51
+        }
+      },
+      {
+        "score": 0.42990371584892273,
+        "card_id": "HTN_ADVICE_001",
+        "disease": "Hypertension",
+        "category": "advice_and_followup",
+        "recommended_action": "Review monthly after starting or changing antihypertensive treatment until target blood pressure is reached; once controlled, follow up every 3-6 months. Refer to an appropriate specialist when accelerated or malignant hypertension, suspected secondary hypertension, resistant hypertension, recent target-organ damage, pregnancy, or age under 18 years is present.",
+        "source": {
+          "title": "National Guideline on Hypertension",
+          "version": "2nd Edition, November 2023",
+          "pdf_page": 65
+        }
+      },
+      {
+        "score": 0.35350048542022705,
+        "card_id": "HTN_MGMT_001",
+        "disease": "Hypertension",
+        "category": "medication_and_management",
+        "recommended_action": "Use the national primary-care stepwise antihypertensive protocol: start amlodipine 5 mg once daily; if target blood pressure is not reached after review, add losartan 50 mg once daily; if still uncontrolled, add hydrochlorothiazide 12.5 mg once daily and consider referral when appropriate.",
+        "source": {
+          "title": "National Guideline on Hypertension",
+          "version": "2nd Edition, November 2023",
+          "pdf_page": 64
+        }
+      },
+      {
+        "score": 0.2363494485616684,
+        "card_id": "CHOLERA_ASSESS_001",
+        "disease": "Cholera",
+        "category": "dehydration_assessment",
+        "recommended_action": "Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 6
+        }
+      }
+    ]
+  },
+  {
+    "case_id": "CASE_02_HYPERTENSION",
+    "case_type": "ordinary",
+    "protocol": "Hypertension",
+    "mode": "improved",
+    "patient_text": "A 55-year-old patient has repeated blood pressure readings around 150/95 mmHg over several visits. There are no acute emergency symptoms.",
+    "elapsed_seconds": 0.0264,
+    "generated_response": "Probable Diagnosis:\nProbable Hypertension. Confirm hypertension using repeated blood pressure measurements rather than a single office reading. In general, use at least three BP measurements per visit across two to three visits at 1-4 week intervals. A diagnosis may be made at a single visit if BP is at least 160/100 mmHg or there is evidence of hypertension-mediated organ damage.\n\nInvestigations:\n- Perform baseline investigations for hypertension including serum sodium, potassium, creatinine with eGFR, urine dipstick, and 12-lead ECG. If available, obtain lipid profile and fasting glucose. Additional investigations should depend on suspicion of secondary hypertension or hypertension-mediated organ damage.\n\nMedication Planning:\n- Amlodipine; dose: 5 mg; route: oral; frequency: once daily\n- Losartan; dose: 50 mg; route: oral; frequency: once daily; instructions: add if blood pressure remains above target\n- Hydrochlorothiazide; dose: 12.5 mg; route: oral; frequency: once daily; instructions: add if blood pressure remains above target despite prior steps\n\nAdvice:\n- monthly review until target BP is achieved\n- 3-6 monthly follow-up after BP control\n- refer when specialist indications are present\n\nMissing Information:\nNo major applicability information was identified as missing.\n\nEvidence:\n- HTN_DIAG_001: National Guideline on Hypertension (2nd Edition, November 2023), page 46\n- HTN_INV_001: National Guideline on Hypertension (2nd Edition, November 2023), page 51\n- HTN_ADVICE_001: National Guideline on Hypertension (2nd Edition, November 2023), page 65\n- HTN_MGMT_001: National Guideline on Hypertension (2nd Edition, November 2023), page 64",
+    "expected_checklist": {
+      "probable_diagnosis": "Hypertension",
+      "should_retrieve_diagnosis_card": true,
+      "should_recommend_baseline_investigations": true,
+      "should_not_treat_as_single_reading_confirmation": true
+    },
+    "primary_disease": "Hypertension",
+    "patient_facts": {},
+    "accepted_cards": [
+      {
+        "score": 0.6765568852424622,
+        "card_id": "HTN_DIAG_001",
+        "disease": "Hypertension",
+        "category": "probable_diagnosis",
+        "recommended_action": "Confirm hypertension using repeated blood pressure measurements rather than a single office reading. In general, use at least three BP measurements per visit across two to three visits at 1-4 week intervals. A diagnosis may be made at a single visit if BP is at least 160/100 mmHg or there is evidence of hypertension-mediated organ damage.",
+        "advice": [],
+        "medication": [],
+        "conditions": [
+          "single-visit diagnosis may be appropriate when BP is at least 160/100 mmHg or HMOD is present"
+        ],
+        "missing_fields": [
+          "repeat BP values",
+          "number of visits",
+          "evidence of hypertension-mediated organ damage"
+        ],
+        "source": {
+          "title": "National Guideline on Hypertension",
+          "version": "2nd Edition, November 2023",
+          "pdf_page": 46
+        },
+        "applicability_reason": "No special applicability rule."
+      },
+      {
+        "score": 0.4620662331581116,
+        "card_id": "HTN_INV_001",
+        "disease": "Hypertension",
+        "category": "investigation",
+        "recommended_action": "Perform baseline investigations for hypertension including serum sodium, potassium, creatinine with eGFR, urine dipstick, and 12-lead ECG. If available, obtain lipid profile and fasting glucose. Additional investigations should depend on suspicion of secondary hypertension or hypertension-mediated organ damage.",
+        "advice": [],
+        "medication": [],
+        "conditions": [
+          "testing should not unnecessarily delay treatment when treatment is clinically indicated"
+        ],
+        "missing_fields": [
+          "renal function status",
+          "electrolyte status",
+          "cardiovascular risk profile",
+          "possible secondary cause or organ damage"
+        ],
+        "source": {
+          "title": "National Guideline on Hypertension",
+          "version": "2nd Edition, November 2023",
+          "pdf_page": 51
+        },
+        "applicability_reason": "No special applicability rule."
+      },
+      {
+        "score": 0.42990371584892273,
+        "card_id": "HTN_ADVICE_001",
+        "disease": "Hypertension",
+        "category": "advice_and_followup",
+        "recommended_action": "Review monthly after starting or changing antihypertensive treatment until target blood pressure is reached; once controlled, follow up every 3-6 months. Refer to an appropriate specialist when accelerated or malignant hypertension, suspected secondary hypertension, resistant hypertension, recent target-organ damage, pregnancy, or age under 18 years is present.",
+        "advice": [
+          "monthly review until target BP is achieved",
+          "3-6 monthly follow-up after BP control",
+          "refer when specialist indications are present"
+        ],
+        "medication": [],
+        "conditions": [
+          "follow-up interval depends on blood pressure control and treatment changes"
+        ],
+        "missing_fields": [
+          "current blood pressure control status",
+          "recent treatment change",
+          "presence of referral indications"
+        ],
+        "source": {
+          "title": "National Guideline on Hypertension",
+          "version": "2nd Edition, November 2023",
+          "pdf_page": 65
+        },
+        "applicability_reason": "No special applicability rule."
+      },
+      {
+        "score": 0.35350048542022705,
+        "card_id": "HTN_MGMT_001",
+        "disease": "Hypertension",
+        "category": "medication_and_management",
+        "recommended_action": "Use the national primary-care stepwise antihypertensive protocol: start amlodipine 5 mg once daily; if target blood pressure is not reached after review, add losartan 50 mg once daily; if still uncontrolled, add hydrochlorothiazide 12.5 mg once daily and consider referral when appropriate.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Amlodipine",
+            "dose": "5 mg",
+            "route": "oral",
+            "frequency": "once daily"
+          },
+          {
+            "name": "Losartan",
+            "dose": "50 mg",
+            "route": "oral",
+            "frequency": "once daily",
+            "instructions": "add if blood pressure remains above target"
+          },
+          {
+            "name": "Hydrochlorothiazide",
+            "dose": "12.5 mg",
+            "route": "oral",
+            "frequency": "once daily",
+            "instructions": "add if blood pressure remains above target despite prior steps"
+          }
+        ],
+        "conditions": [
+          "review response after treatment initiation or change",
+          "treatment choice must consider patient-specific contraindications and comorbidities"
+        ],
+        "missing_fields": [
+          "pregnancy status",
+          "renal function",
+          "electrolytes",
+          "current antihypertensive medicines",
+          "relevant contraindications or comorbidities"
+        ],
+        "source": {
+          "title": "National Guideline on Hypertension",
+          "version": "2nd Edition, November 2023",
+          "pdf_page": 64
+        },
+        "applicability_reason": "No special applicability rule."
+      }
+    ],
+    "rejected_cards": [],
+    "differential_diagnoses": []
+  },
+  {
+    "case_id": "CASE_03_CHOLERA",
+    "case_type": "ordinary",
+    "protocol": "Cholera",
+    "mode": "baseline",
+    "patient_text": "A 40-year-old patient has acute watery diarrhoea, a very weak pulse, sunken eyes and is unable to drink properly. The patient appears severely dehydrated.",
+    "elapsed_seconds": 0.0304,
+    "generated_response": "Probable Diagnosis:\nProbable Cholera. Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.\n\nInvestigations:\n- Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.\n\nMedication Planning:\n- For some dehydration, use Plan B with oral rehydration solution over 4 hours and reassess at least every hour. Give additional ORS to replace ongoing stool losses.\n- For patients with no signs of dehydration, use Plan A. Give ORS after each loose stool according to age and continue oral hydration. For patients under 24 months give 50-100 mL after each loose stool; for ages 2-9 years give 100-200 mL; for patients aged 10 years or older give as much as wanted.\n- Use antibiotics when the patient has severe dehydration, is pregnant, or is elderly. Preferred treatment is single-dose doxycycline; azithromycin is an alternative. Do not recommend antibiotics solely from this card if these applicability criteria are unknown.\n\nAdvice:\nNo specific advice card was retrieved in the top results.\n\nMissing Information:\nBaseline retrieval does not perform explicit applicability or missing-information checks.\n\nEvidence:\n- CHOLERA_ASSESS_001: Clinical tools for cholera treatment facilities (WHO 2024), page 6\n- CHOLERA_DIAG_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5\n- CHOLERA_MGMT_002: Clinical tools for cholera treatment facilities (WHO 2024), page 9\n- CHOLERA_MGMT_003: Clinical tools for cholera treatment facilities (WHO 2024), page 11\n- CHOLERA_ABX_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5",
+    "expected_checklist": {
+      "probable_diagnosis": "Cholera",
+      "dehydration_severity": "severe",
+      "expected_plan": "Plan C",
+      "should_reject_plan_b": true,
+      "should_reject_plan_a": true
+    },
+    "retrieved_cards": [
+      {
+        "score": 0.606033444404602,
+        "card_id": "CHOLERA_ASSESS_001",
+        "disease": "Cholera",
+        "category": "dehydration_assessment",
+        "recommended_action": "Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 6
+        }
+      },
+      {
+        "score": 0.5240284204483032,
+        "card_id": "CHOLERA_DIAG_001",
+        "disease": "Cholera",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        }
+      },
+      {
+        "score": 0.4534035623073578,
+        "card_id": "CHOLERA_MGMT_002",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For some dehydration, use Plan B with oral rehydration solution over 4 hours and reassess at least every hour. Give additional ORS to replace ongoing stool losses.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 9
+        }
+      },
+      {
+        "score": 0.4363555312156677,
+        "card_id": "CHOLERA_MGMT_003",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For patients with no signs of dehydration, use Plan A. Give ORS after each loose stool according to age and continue oral hydration. For patients under 24 months give 50-100 mL after each loose stool; for ages 2-9 years give 100-200 mL; for patients aged 10 years or older give as much as wanted.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 11
+        }
+      },
+      {
+        "score": 0.4119947552680969,
+        "card_id": "CHOLERA_ABX_001",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "Use antibiotics when the patient has severe dehydration, is pregnant, or is elderly. Preferred treatment is single-dose doxycycline; azithromycin is an alternative. Do not recommend antibiotics solely from this card if these applicability criteria are unknown.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        }
+      }
+    ]
+  },
+  {
+    "case_id": "CASE_03_CHOLERA",
+    "case_type": "ordinary",
+    "protocol": "Cholera",
+    "mode": "improved",
+    "patient_text": "A 40-year-old patient has acute watery diarrhoea, a very weak pulse, sunken eyes and is unable to drink properly. The patient appears severely dehydrated.",
+    "elapsed_seconds": 0.031,
+    "generated_response": "Probable Diagnosis:\nProbable Cholera. Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.\n\nInvestigations:\n- Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.\n\nMedication Planning:\n- Doxycycline; dose: 200 mg if under 12 years; 300 mg for older children and adults; route: oral; frequency: single dose\n- Azithromycin; dose: 20 mg/kg if under 12 years; 1 g for older children and adults; route: oral; frequency: single dose; instructions: alternative to doxycycline\n- Ringer's lactate; dose: 100 mL/kg total; route: intravenous; frequency: 30 mL/kg initially then 70 mL/kg; duration: age-dependent infusion schedule; instructions: under 12 months: 30 mL/kg in 1 hour then 70 mL/kg over 5 hours; 12 months or older: 30 mL/kg in 30 minutes then 70 mL/kg over 2.5 hours\n\nAdvice:\nNo additional patient advice was explicitly supported by the currently applicable cards.\n\nMissing Information:\nNo major applicability information was identified as missing.\n\nEvidence:\n- CHOLERA_ASSESS_001: Clinical tools for cholera treatment facilities (WHO 2024), page 6\n- CHOLERA_DIAG_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5\n- CHOLERA_ABX_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5\n- CHOLERA_MGMT_001: Clinical tools for cholera treatment facilities (WHO 2024), page 7",
+    "expected_checklist": {
+      "probable_diagnosis": "Cholera",
+      "dehydration_severity": "severe",
+      "expected_plan": "Plan C",
+      "should_reject_plan_b": true,
+      "should_reject_plan_a": true
+    },
+    "primary_disease": "Cholera",
+    "patient_facts": {
+      "dehydration_severity": "severe",
+      "severe_dehydration": true
+    },
+    "accepted_cards": [
+      {
+        "score": 0.606033444404602,
+        "card_id": "CHOLERA_ASSESS_001",
+        "disease": "Cholera",
+        "category": "dehydration_assessment",
+        "recommended_action": "Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.",
+        "advice": [],
+        "medication": [],
+        "conditions": [
+          "dehydration classification determines Plan A, Plan B, or Plan C"
+        ],
+        "missing_fields": [
+          "mental status",
+          "pulse quality",
+          "respiratory distress",
+          "ability to drink",
+          "thirst",
+          "sunken eyes",
+          "skin pinch findings"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 6
+        },
+        "applicability_reason": "No special applicability rule."
+      },
+      {
+        "score": 0.5240284204483032,
+        "card_id": "CHOLERA_DIAG_001",
+        "disease": "Cholera",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.",
+        "advice": [],
+        "medication": [],
+        "conditions": [
+          "case definition depends on whether a cholera outbreak has been declared",
+          "outside an outbreak, age and severe dehydration status are required"
+        ],
+        "missing_fields": [
+          "cholera outbreak status",
+          "patient age",
+          "presence or absence of severe dehydration"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        },
+        "applicability_reason": "No special applicability rule."
+      },
+      {
+        "score": 0.4119947552680969,
+        "card_id": "CHOLERA_ABX_001",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "Use antibiotics when the patient has severe dehydration, is pregnant, or is elderly. Preferred treatment is single-dose doxycycline; azithromycin is an alternative. Do not recommend antibiotics solely from this card if these applicability criteria are unknown.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Doxycycline",
+            "dose": "200 mg if under 12 years; 300 mg for older children and adults",
+            "route": "oral",
+            "frequency": "single dose"
+          },
+          {
+            "name": "Azithromycin",
+            "dose": "20 mg/kg if under 12 years; 1 g for older children and adults",
+            "route": "oral",
+            "frequency": "single dose",
+            "instructions": "alternative to doxycycline"
+          }
+        ],
+        "conditions": [
+          "antibiotics are indicated for severe dehydration, pregnancy, or elderly patients",
+          "drug and dose selection depends on age"
+        ],
+        "missing_fields": [
+          "dehydration severity",
+          "pregnancy status",
+          "whether patient is elderly",
+          "patient age"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        },
+        "applicability_reason": "Applicable to current patient."
+      },
+      {
+        "score": 0.3793969452381134,
+        "card_id": "CHOLERA_MGMT_001",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For severe dehydration, start intravenous Ringer's lactate immediately. For infants under 12 months, give 30 mL/kg in 1 hour followed by 70 mL/kg over the next 5 hours. For patients aged 12 months or older, give 30 mL/kg in 30 minutes followed by 70 mL/kg over the next 2.5 hours. Reassess at least every 15-30 minutes and give ORS to replace ongoing losses as soon as the patient can drink safely.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Ringer's lactate",
+            "dose": "100 mL/kg total",
+            "route": "intravenous",
+            "frequency": "30 mL/kg initially then 70 mL/kg",
+            "duration": "age-dependent infusion schedule",
+            "instructions": "under 12 months: 30 mL/kg in 1 hour then 70 mL/kg over 5 hours; 12 months or older: 30 mL/kg in 30 minutes then 70 mL/kg over 2.5 hours"
+          }
+        ],
+        "conditions": [
+          "use Plan C only when severe dehydration or shock criteria are met",
+          "age is required to determine infusion timing"
+        ],
+        "missing_fields": [
+          "patient age",
+          "body weight",
+          "dehydration severity",
+          "ability to drink safely"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 7
+        },
+        "applicability_reason": "Applicable to current patient."
+      }
+    ],
+    "rejected_cards": [
+      {
+        "score": 0.4534035623073578,
+        "card_id": "CHOLERA_MGMT_002",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For some dehydration, use Plan B with oral rehydration solution over 4 hours and reassess at least every hour. Give additional ORS to replace ongoing stool losses.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Oral Rehydration Solution (ORS)",
+            "dose": "age- and weight-based over 4 hours",
+            "route": "oral",
+            "frequency": "over 4 hours plus additional ORS for ongoing losses",
+            "instructions": "<4 months and <5 kg: 200-400 mL; 4-11 months and 5-8 kg: 400-600 mL; 12-23 months and 8-12 kg: 600-800 mL; 2-4 years and 12-16 kg: 800-1200 mL; 4-14 years and 16-30 kg: 1200-2200 mL; 15 years or older and 30 kg or more: 2200-4000 mL"
+          }
+        ],
+        "conditions": [
+          "Plan B applies when there are no danger signs and the patient meets criteria for some dehydration",
+          "ORS volume depends on age and weight"
+        ],
+        "missing_fields": [
+          "patient age",
+          "body weight",
+          "presence of danger signs",
+          "dehydration classification",
+          "ongoing stool losses"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 9
+        },
+        "applicability_reason": "Not applicable because dehydration_severity=severe"
+      },
+      {
+        "score": 0.4363555312156677,
+        "card_id": "CHOLERA_MGMT_003",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For patients with no signs of dehydration, use Plan A. Give ORS after each loose stool according to age and continue oral hydration. For patients under 24 months give 50-100 mL after each loose stool; for ages 2-9 years give 100-200 mL; for patients aged 10 years or older give as much as wanted.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Oral Rehydration Solution (ORS)",
+            "dose": "age-based after each loose stool",
+            "route": "oral",
+            "frequency": "after each loose stool",
+            "instructions": "<24 months: 50-100 mL; 2-9 years: 100-200 mL; 10 years or older: as much as wanted"
+          },
+          {
+            "name": "Zinc",
+            "dose": "10 mg if under 6 months; 20 mg if over 6 months",
+            "route": "oral",
+            "frequency": "once daily",
+            "duration": "10 days",
+            "instructions": "pediatric recommendation from the WHO tool"
+          }
+        ],
+        "conditions": [
+          "Plan A applies only when no dehydration is present",
+          "ORS amount depends on age"
+        ],
+        "missing_fields": [
+          "patient age",
+          "dehydration status",
+          "ability to drink"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 11
+        },
+        "applicability_reason": "Not applicable because dehydration_severity=severe"
+      }
+    ],
+    "differential_diagnoses": []
+  },
+  {
+    "case_id": "CASE_04_CHIKUNGUNYA",
+    "case_type": "ordinary",
+    "protocol": "Chikungunya",
+    "mode": "baseline",
+    "patient_text": "A 32-year-old patient developed sudden high fever, severe pain in multiple joints, headache and skin rash 3 days ago.",
+    "elapsed_seconds": 0.0269,
+    "generated_response": "Probable Diagnosis:\nProbable Chikungunya. Consider chikungunya when there is sudden onset of fever with joint manifestations and rash. A possible case meets clinical criteria; a probable case meets both clinical and epidemiological criteria; a confirmed case requires laboratory criteria.\n\nInvestigations:\nNo investigation card was retrieved in the top results.\n\nMedication Planning:\n- Use antibiotics when the patient has severe dehydration, is pregnant, or is elderly. Preferred treatment is single-dose doxycycline; azithromycin is an alternative. Do not recommend antibiotics solely from this card if these applicability criteria are unknown.\n\nAdvice:\nNo specific advice card was retrieved in the top results.\n\nMissing Information:\nBaseline retrieval does not perform explicit applicability or missing-information checks.\n\nEvidence:\n- CHIK_DIAG_001: National Guideline on Clinical Management of Chikungunya Fever (First Published 15 May 2017), page 11\n- DENGUE_DIAG_001: National Guideline for Clinical Management of Dengue (5th Edition 2025), page 27\n- DENGUE_WARN_001: National Guideline for Clinical Management of Dengue (5th Edition 2025), page 28\n- CHOLERA_DIAG_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5\n- CHOLERA_ABX_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5",
+    "expected_checklist": {
+      "probable_diagnosis": "Chikungunya",
+      "should_include_dengue_as_differential": true,
+      "should_recommend_day_appropriate_testing": true,
+      "should_avoid_nsaid_until_dengue_excluded": true
+    },
+    "retrieved_cards": [
+      {
+        "score": 0.5711255669593811,
+        "card_id": "CHIK_DIAG_001",
+        "disease": "Chikungunya",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider chikungunya when there is sudden onset of fever with joint manifestations and rash. A possible case meets clinical criteria; a probable case meets both clinical and epidemiological criteria; a confirmed case requires laboratory criteria.",
+        "source": {
+          "title": "National Guideline on Clinical Management of Chikungunya Fever",
+          "version": "First Published 15 May 2017",
+          "pdf_page": 11
+        }
+      },
+      {
+        "score": 0.5411913394927979,
+        "card_id": "DENGUE_DIAG_001",
+        "disease": "Dengue",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider dengue fever as a probable diagnosis when the clinical presentation is compatible; do not treat this card alone as diagnostic confirmation.",
+        "source": {
+          "title": "National Guideline for Clinical Management of Dengue",
+          "version": "5th Edition 2025",
+          "pdf_page": 27
+        }
+      },
+      {
+        "score": 0.37130656838417053,
+        "card_id": "DENGUE_WARN_001",
+        "disease": "Dengue",
+        "category": "warning_signs",
+        "recommended_action": "Identify dengue warning signs and consider escalation or closer clinical assessment when present.",
+        "source": {
+          "title": "National Guideline for Clinical Management of Dengue",
+          "version": "5th Edition 2025",
+          "pdf_page": 28
+        }
+      },
+      {
+        "score": 0.3494950830936432,
+        "card_id": "CHOLERA_DIAG_001",
+        "disease": "Cholera",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        }
+      },
+      {
+        "score": 0.3401077687740326,
+        "card_id": "CHOLERA_ABX_001",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "Use antibiotics when the patient has severe dehydration, is pregnant, or is elderly. Preferred treatment is single-dose doxycycline; azithromycin is an alternative. Do not recommend antibiotics solely from this card if these applicability criteria are unknown.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        }
+      }
+    ]
+  },
+  {
+    "case_id": "CASE_04_CHIKUNGUNYA",
+    "case_type": "ordinary",
+    "protocol": "Chikungunya",
+    "mode": "improved",
+    "patient_text": "A 32-year-old patient developed sudden high fever, severe pain in multiple joints, headache and skin rash 3 days ago.",
+    "elapsed_seconds": 0.0247,
+    "generated_response": "Probable Diagnosis:\nProbable Chikungunya. Consider chikungunya when there is sudden onset of fever with joint manifestations and rash. A possible case meets clinical criteria; a probable case meets both clinical and epidemiological criteria; a confirmed case requires laboratory criteria. Differential diagnosis retrieved: Dengue.\n\nInvestigations:\n- Select chikungunya testing according to the day of illness. Use real-time RT-PCR within 5 days of symptom onset. Viral-specific IgM can be tested from 5 to 28 days after fever onset. A four-fold rise in IgG can be assessed using samples collected at least three weeks apart, with the first sample after day 7. Routine investigations may include CBC, C-reactive protein and SGPT.\n\nMedication Planning:\n- Paracetamol; dose: up to 1000 mg per dose in adults; route: oral; frequency: up to four times daily during fever; instructions: use only in persons without pre-existing liver or kidney disease; children may receive 50-60 mg/kg/day in divided doses\n\nAdvice:\n- consume plenty of water with electrolytes\n- adequate rest\n- avoid self-medication with aspirin or NSAIDs\n- avoid heat over painful joints in the acute stage\n- mild exercise or physiotherapy during recovery\n\nMissing Information:\nNo major applicability information was identified as missing.\n\nEvidence:\n- CHIK_DIAG_001: National Guideline on Clinical Management of Chikungunya Fever (First Published 15 May 2017), page 11\n- CHIK_INV_001: National Guideline on Clinical Management of Chikungunya Fever (First Published 15 May 2017), page 22\n- CHIK_MGMT_001: National Guideline on Clinical Management of Chikungunya Fever (First Published 15 May 2017), pages 18, 19, 20",
+    "expected_checklist": {
+      "probable_diagnosis": "Chikungunya",
+      "should_include_dengue_as_differential": true,
+      "should_recommend_day_appropriate_testing": true,
+      "should_avoid_nsaid_until_dengue_excluded": true
+    },
+    "primary_disease": "Chikungunya",
+    "patient_facts": {},
+    "accepted_cards": [
+      {
+        "score": 0.5711255669593811,
+        "card_id": "CHIK_DIAG_001",
+        "disease": "Chikungunya",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider chikungunya when there is sudden onset of fever with joint manifestations and rash. A possible case meets clinical criteria; a probable case meets both clinical and epidemiological criteria; a confirmed case requires laboratory criteria.",
+        "advice": [],
+        "medication": [],
+        "conditions": [
+          "clinical criteria include fever above 38.5 C and severe arthralgia or arthritis not explained by another condition",
+          "epidemiological criteria include residence in or travel to an epidemic area or reported transmission within 15 days before symptom onset"
+        ],
+        "missing_fields": [
+          "temperature",
+          "severity of arthralgia or arthritis",
+          "alternative explanation for joint symptoms",
+          "recent travel or residence in epidemic area",
+          "recent local transmission history"
+        ],
+        "source": {
+          "title": "National Guideline on Clinical Management of Chikungunya Fever",
+          "version": "First Published 15 May 2017",
+          "pdf_page": 11
+        },
+        "applicability_reason": "No special applicability rule."
+      },
+      {
+        "score": 0.33750119805336,
+        "card_id": "CHIK_INV_001",
+        "disease": "Chikungunya",
+        "category": "investigation",
+        "recommended_action": "Select chikungunya testing according to the day of illness. Use real-time RT-PCR within 5 days of symptom onset. Viral-specific IgM can be tested from 5 to 28 days after fever onset. A four-fold rise in IgG can be assessed using samples collected at least three weeks apart, with the first sample after day 7. Routine investigations may include CBC, C-reactive protein and SGPT.",
+        "advice": [],
+        "medication": [],
+        "conditions": [
+          "test choice depends on day of illness",
+          "RT-PCR availability may be limited"
+        ],
+        "missing_fields": [
+          "day of illness",
+          "availability of RT-PCR",
+          "previous laboratory results"
+        ],
+        "source": {
+          "title": "National Guideline on Clinical Management of Chikungunya Fever",
+          "version": "First Published 15 May 2017",
+          "pdf_page": 22
+        },
+        "applicability_reason": "No special applicability rule."
+      },
+      {
+        "score": 0.3318411111831665,
+        "card_id": "CHIK_MGMT_001",
+        "disease": "Chikungunya",
+        "category": "medication_and_advice",
+        "recommended_action": "Manage mild or moderate chikungunya supportively at home with adequate fluids containing electrolytes, rest, and paracetamol for fever when appropriate. Avoid aspirin and NSAIDs during the acute phase, and do not use NSAIDs unless dengue has been adequately excluded.",
+        "advice": [
+          "consume plenty of water with electrolytes",
+          "adequate rest",
+          "avoid self-medication with aspirin or NSAIDs",
+          "avoid heat over painful joints in the acute stage",
+          "mild exercise or physiotherapy during recovery"
+        ],
+        "medication": [
+          {
+            "name": "Paracetamol",
+            "dose": "up to 1000 mg per dose in adults",
+            "route": "oral",
+            "frequency": "up to four times daily during fever",
+            "instructions": "use only in persons without pre-existing liver or kidney disease; children may receive 50-60 mg/kg/day in divided doses"
+          }
+        ],
+        "conditions": [
+          "home management is appropriate for mild or moderate cases",
+          "severe cases require hospital management",
+          "paracetamol dosing must consider liver or kidney disease",
+          "NSAIDs should not be used until dengue is excluded"
+        ],
+        "missing_fields": [
+          "severity classification",
+          "liver disease",
+          "kidney disease",
+          "whether dengue has been excluded",
+          "patient age and body weight"
+        ],
+        "source": {
+          "title": "National Guideline on Clinical Management of Chikungunya Fever",
+          "version": "First Published 15 May 2017",
+          "pdf_page": [
+            18,
+            19,
+            20
+          ]
+        },
+        "applicability_reason": "No special applicability rule."
+      }
+    ],
+    "rejected_cards": [],
+    "differential_diagnoses": [
+      {
+        "score": 0.5411913394927979,
+        "card_id": "DENGUE_DIAG_001",
+        "disease": "Dengue",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider dengue fever as a probable diagnosis when the clinical presentation is compatible; do not treat this card alone as diagnostic confirmation.",
+        "source": {
+          "title": "National Guideline for Clinical Management of Dengue",
+          "version": "5th Edition 2025",
+          "pdf_page": 27
+        }
+      }
+    ]
+  },
+  {
+    "case_id": "CASE_05_INCOMPLETE",
+    "case_type": "ambiguous_incomplete",
+    "protocol": "Cholera",
+    "mode": "baseline",
+    "patient_text": "A 35-year-old patient presents with acute watery diarrhoea that started today and reports several loose stools.",
+    "elapsed_seconds": 0.0245,
+    "generated_response": "Probable Diagnosis:\nProbable Cholera. Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.\n\nInvestigations:\n- Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.\n\nMedication Planning:\n- For patients with no signs of dehydration, use Plan A. Give ORS after each loose stool according to age and continue oral hydration. For patients under 24 months give 50-100 mL after each loose stool; for ages 2-9 years give 100-200 mL; for patients aged 10 years or older give as much as wanted.\n- For some dehydration, use Plan B with oral rehydration solution over 4 hours and reassess at least every hour. Give additional ORS to replace ongoing stool losses.\n- Use antibiotics when the patient has severe dehydration, is pregnant, or is elderly. Preferred treatment is single-dose doxycycline; azithromycin is an alternative. Do not recommend antibiotics solely from this card if these applicability criteria are unknown.\n\nAdvice:\nNo specific advice card was retrieved in the top results.\n\nMissing Information:\nBaseline retrieval does not perform explicit applicability or missing-information checks.\n\nEvidence:\n- CHOLERA_DIAG_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5\n- CHOLERA_MGMT_003: Clinical tools for cholera treatment facilities (WHO 2024), page 11\n- CHOLERA_MGMT_002: Clinical tools for cholera treatment facilities (WHO 2024), page 9\n- CHOLERA_ABX_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5\n- CHOLERA_ASSESS_001: Clinical tools for cholera treatment facilities (WHO 2024), page 6",
+    "expected_checklist": {
+      "probable_diagnosis": "Cholera",
+      "missing_information": [
+        "dehydration severity"
+      ],
+      "should_not_select_plan_a_b_or_c_without_more_information": true,
+      "should_not_guess_antibiotic_applicability": true
+    },
+    "retrieved_cards": [
+      {
+        "score": 0.4794132113456726,
+        "card_id": "CHOLERA_DIAG_001",
+        "disease": "Cholera",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        }
+      },
+      {
+        "score": 0.4316481947898865,
+        "card_id": "CHOLERA_MGMT_003",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For patients with no signs of dehydration, use Plan A. Give ORS after each loose stool according to age and continue oral hydration. For patients under 24 months give 50-100 mL after each loose stool; for ages 2-9 years give 100-200 mL; for patients aged 10 years or older give as much as wanted.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 11
+        }
+      },
+      {
+        "score": 0.40894919633865356,
+        "card_id": "CHOLERA_MGMT_002",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For some dehydration, use Plan B with oral rehydration solution over 4 hours and reassess at least every hour. Give additional ORS to replace ongoing stool losses.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 9
+        }
+      },
+      {
+        "score": 0.3251998722553253,
+        "card_id": "CHOLERA_ABX_001",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "Use antibiotics when the patient has severe dehydration, is pregnant, or is elderly. Preferred treatment is single-dose doxycycline; azithromycin is an alternative. Do not recommend antibiotics solely from this card if these applicability criteria are unknown.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        }
+      },
+      {
+        "score": 0.31334760785102844,
+        "card_id": "CHOLERA_ASSESS_001",
+        "disease": "Cholera",
+        "category": "dehydration_assessment",
+        "recommended_action": "Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 6
+        }
+      }
+    ]
+  },
+  {
+    "case_id": "CASE_05_INCOMPLETE",
+    "case_type": "ambiguous_incomplete",
+    "protocol": "Cholera",
+    "mode": "improved",
+    "patient_text": "A 35-year-old patient presents with acute watery diarrhoea that started today and reports several loose stools.",
+    "elapsed_seconds": 0.0276,
+    "generated_response": "Probable Diagnosis:\nProbable Cholera. Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.\n\nInvestigations:\n- Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.\n\nMedication Planning:\nA treatment plan should not yet be selected because required applicability information is missing.\n\nAdvice:\nNo additional patient advice was explicitly supported by the currently applicable cards.\n\nMissing Information:\n- Missing required information: dehydration_severity\n- Missing applicability information: severe_dehydration, pregnancy, elderly\n\nEvidence:\n- CHOLERA_DIAG_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5\n- CHOLERA_ASSESS_001: Clinical tools for cholera treatment facilities (WHO 2024), page 6",
+    "expected_checklist": {
+      "probable_diagnosis": "Cholera",
+      "missing_information": [
+        "dehydration severity"
+      ],
+      "should_not_select_plan_a_b_or_c_without_more_information": true,
+      "should_not_guess_antibiotic_applicability": true
+    },
+    "primary_disease": "Cholera",
+    "patient_facts": {},
+    "accepted_cards": [
+      {
+        "score": 0.4794132113456726,
+        "card_id": "CHOLERA_DIAG_001",
+        "disease": "Cholera",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.",
+        "advice": [],
+        "medication": [],
+        "conditions": [
+          "case definition depends on whether a cholera outbreak has been declared",
+          "outside an outbreak, age and severe dehydration status are required"
+        ],
+        "missing_fields": [
+          "cholera outbreak status",
+          "patient age",
+          "presence or absence of severe dehydration"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        },
+        "applicability_reason": "No special applicability rule."
+      },
+      {
+        "score": 0.31334760785102844,
+        "card_id": "CHOLERA_ASSESS_001",
+        "disease": "Cholera",
+        "category": "dehydration_assessment",
+        "recommended_action": "Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.",
+        "advice": [],
+        "medication": [],
+        "conditions": [
+          "dehydration classification determines Plan A, Plan B, or Plan C"
+        ],
+        "missing_fields": [
+          "mental status",
+          "pulse quality",
+          "respiratory distress",
+          "ability to drink",
+          "thirst",
+          "sunken eyes",
+          "skin pinch findings"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 6
+        },
+        "applicability_reason": "No special applicability rule."
+      }
+    ],
+    "rejected_cards": [
+      {
+        "score": 0.4316481947898865,
+        "card_id": "CHOLERA_MGMT_003",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For patients with no signs of dehydration, use Plan A. Give ORS after each loose stool according to age and continue oral hydration. For patients under 24 months give 50-100 mL after each loose stool; for ages 2-9 years give 100-200 mL; for patients aged 10 years or older give as much as wanted.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Oral Rehydration Solution (ORS)",
+            "dose": "age-based after each loose stool",
+            "route": "oral",
+            "frequency": "after each loose stool",
+            "instructions": "<24 months: 50-100 mL; 2-9 years: 100-200 mL; 10 years or older: as much as wanted"
+          },
+          {
+            "name": "Zinc",
+            "dose": "10 mg if under 6 months; 20 mg if over 6 months",
+            "route": "oral",
+            "frequency": "once daily",
+            "duration": "10 days",
+            "instructions": "pediatric recommendation from the WHO tool"
+          }
+        ],
+        "conditions": [
+          "Plan A applies only when no dehydration is present",
+          "ORS amount depends on age"
+        ],
+        "missing_fields": [
+          "patient age",
+          "dehydration status",
+          "ability to drink"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 11
+        },
+        "applicability_reason": "Missing required information: dehydration_severity"
+      },
+      {
+        "score": 0.40894919633865356,
+        "card_id": "CHOLERA_MGMT_002",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For some dehydration, use Plan B with oral rehydration solution over 4 hours and reassess at least every hour. Give additional ORS to replace ongoing stool losses.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Oral Rehydration Solution (ORS)",
+            "dose": "age- and weight-based over 4 hours",
+            "route": "oral",
+            "frequency": "over 4 hours plus additional ORS for ongoing losses",
+            "instructions": "<4 months and <5 kg: 200-400 mL; 4-11 months and 5-8 kg: 400-600 mL; 12-23 months and 8-12 kg: 600-800 mL; 2-4 years and 12-16 kg: 800-1200 mL; 4-14 years and 16-30 kg: 1200-2200 mL; 15 years or older and 30 kg or more: 2200-4000 mL"
+          }
+        ],
+        "conditions": [
+          "Plan B applies when there are no danger signs and the patient meets criteria for some dehydration",
+          "ORS volume depends on age and weight"
+        ],
+        "missing_fields": [
+          "patient age",
+          "body weight",
+          "presence of danger signs",
+          "dehydration classification",
+          "ongoing stool losses"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 9
+        },
+        "applicability_reason": "Missing required information: dehydration_severity"
+      },
+      {
+        "score": 0.3251998722553253,
+        "card_id": "CHOLERA_ABX_001",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "Use antibiotics when the patient has severe dehydration, is pregnant, or is elderly. Preferred treatment is single-dose doxycycline; azithromycin is an alternative. Do not recommend antibiotics solely from this card if these applicability criteria are unknown.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Doxycycline",
+            "dose": "200 mg if under 12 years; 300 mg for older children and adults",
+            "route": "oral",
+            "frequency": "single dose"
+          },
+          {
+            "name": "Azithromycin",
+            "dose": "20 mg/kg if under 12 years; 1 g for older children and adults",
+            "route": "oral",
+            "frequency": "single dose",
+            "instructions": "alternative to doxycycline"
+          }
+        ],
+        "conditions": [
+          "antibiotics are indicated for severe dehydration, pregnancy, or elderly patients",
+          "drug and dose selection depends on age"
+        ],
+        "missing_fields": [
+          "dehydration severity",
+          "pregnancy status",
+          "whether patient is elderly",
+          "patient age"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        },
+        "applicability_reason": "Missing applicability information: severe_dehydration, pregnancy, elderly"
+      },
+      {
+        "score": 0.2559759020805359,
+        "card_id": "CHOLERA_MGMT_001",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For severe dehydration, start intravenous Ringer's lactate immediately. For infants under 12 months, give 30 mL/kg in 1 hour followed by 70 mL/kg over the next 5 hours. For patients aged 12 months or older, give 30 mL/kg in 30 minutes followed by 70 mL/kg over the next 2.5 hours. Reassess at least every 15-30 minutes and give ORS to replace ongoing losses as soon as the patient can drink safely.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Ringer's lactate",
+            "dose": "100 mL/kg total",
+            "route": "intravenous",
+            "frequency": "30 mL/kg initially then 70 mL/kg",
+            "duration": "age-dependent infusion schedule",
+            "instructions": "under 12 months: 30 mL/kg in 1 hour then 70 mL/kg over 5 hours; 12 months or older: 30 mL/kg in 30 minutes then 70 mL/kg over 2.5 hours"
+          }
+        ],
+        "conditions": [
+          "use Plan C only when severe dehydration or shock criteria are met",
+          "age is required to determine infusion timing"
+        ],
+        "missing_fields": [
+          "patient age",
+          "body weight",
+          "dehydration severity",
+          "ability to drink safely"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 7
+        },
+        "applicability_reason": "Missing required information: dehydration_severity"
+      }
+    ],
+    "differential_diagnoses": []
+  },
+  {
+    "case_id": "CASE_06_MODIFIED",
+    "case_type": "modified_prerequisite",
+    "protocol": "Cholera",
+    "mode": "baseline",
+    "patient_text": "A 35-year-old patient presents with acute watery diarrhoea. The patient has a weak pulse, sunken eyes, cannot drink properly and has severe dehydration.",
+    "elapsed_seconds": 0.0282,
+    "generated_response": "Probable Diagnosis:\nProbable Cholera. Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.\n\nInvestigations:\n- Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.\n\nMedication Planning:\n- For some dehydration, use Plan B with oral rehydration solution over 4 hours and reassess at least every hour. Give additional ORS to replace ongoing stool losses.\n- For patients with no signs of dehydration, use Plan A. Give ORS after each loose stool according to age and continue oral hydration. For patients under 24 months give 50-100 mL after each loose stool; for ages 2-9 years give 100-200 mL; for patients aged 10 years or older give as much as wanted.\n- Use antibiotics when the patient has severe dehydration, is pregnant, or is elderly. Preferred treatment is single-dose doxycycline; azithromycin is an alternative. Do not recommend antibiotics solely from this card if these applicability criteria are unknown.\n\nAdvice:\nNo specific advice card was retrieved in the top results.\n\nMissing Information:\nBaseline retrieval does not perform explicit applicability or missing-information checks.\n\nEvidence:\n- CHOLERA_ASSESS_001: Clinical tools for cholera treatment facilities (WHO 2024), page 6\n- CHOLERA_DIAG_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5\n- CHOLERA_MGMT_002: Clinical tools for cholera treatment facilities (WHO 2024), page 9\n- CHOLERA_MGMT_003: Clinical tools for cholera treatment facilities (WHO 2024), page 11\n- CHOLERA_ABX_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5",
+    "expected_checklist": {
+      "probable_diagnosis": "Cholera",
+      "dehydration_severity": "severe",
+      "expected_plan": "Plan C",
+      "should_reject_plan_b": true,
+      "should_reject_plan_a": true,
+      "should_change_behavior_from_case_05": true
+    },
+    "retrieved_cards": [
+      {
+        "score": 0.577344536781311,
+        "card_id": "CHOLERA_ASSESS_001",
+        "disease": "Cholera",
+        "category": "dehydration_assessment",
+        "recommended_action": "Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 6
+        }
+      },
+      {
+        "score": 0.5489417314529419,
+        "card_id": "CHOLERA_DIAG_001",
+        "disease": "Cholera",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        }
+      },
+      {
+        "score": 0.45560914278030396,
+        "card_id": "CHOLERA_MGMT_002",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For some dehydration, use Plan B with oral rehydration solution over 4 hours and reassess at least every hour. Give additional ORS to replace ongoing stool losses.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 9
+        }
+      },
+      {
+        "score": 0.44102194905281067,
+        "card_id": "CHOLERA_MGMT_003",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For patients with no signs of dehydration, use Plan A. Give ORS after each loose stool according to age and continue oral hydration. For patients under 24 months give 50-100 mL after each loose stool; for ages 2-9 years give 100-200 mL; for patients aged 10 years or older give as much as wanted.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 11
+        }
+      },
+      {
+        "score": 0.41056546568870544,
+        "card_id": "CHOLERA_ABX_001",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "Use antibiotics when the patient has severe dehydration, is pregnant, or is elderly. Preferred treatment is single-dose doxycycline; azithromycin is an alternative. Do not recommend antibiotics solely from this card if these applicability criteria are unknown.",
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        }
+      }
+    ]
+  },
+  {
+    "case_id": "CASE_06_MODIFIED",
+    "case_type": "modified_prerequisite",
+    "protocol": "Cholera",
+    "mode": "improved",
+    "patient_text": "A 35-year-old patient presents with acute watery diarrhoea. The patient has a weak pulse, sunken eyes, cannot drink properly and has severe dehydration.",
+    "elapsed_seconds": 0.0269,
+    "generated_response": "Probable Diagnosis:\nProbable Cholera. Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.\n\nInvestigations:\n- Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.\n\nMedication Planning:\n- Doxycycline; dose: 200 mg if under 12 years; 300 mg for older children and adults; route: oral; frequency: single dose\n- Azithromycin; dose: 20 mg/kg if under 12 years; 1 g for older children and adults; route: oral; frequency: single dose; instructions: alternative to doxycycline\n- Ringer's lactate; dose: 100 mL/kg total; route: intravenous; frequency: 30 mL/kg initially then 70 mL/kg; duration: age-dependent infusion schedule; instructions: under 12 months: 30 mL/kg in 1 hour then 70 mL/kg over 5 hours; 12 months or older: 30 mL/kg in 30 minutes then 70 mL/kg over 2.5 hours\n\nAdvice:\nNo additional patient advice was explicitly supported by the currently applicable cards.\n\nMissing Information:\nNo major applicability information was identified as missing.\n\nEvidence:\n- CHOLERA_ASSESS_001: Clinical tools for cholera treatment facilities (WHO 2024), page 6\n- CHOLERA_DIAG_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5\n- CHOLERA_ABX_001: Clinical tools for cholera treatment facilities (WHO 2024), page 5\n- CHOLERA_MGMT_001: Clinical tools for cholera treatment facilities (WHO 2024), page 7",
+    "expected_checklist": {
+      "probable_diagnosis": "Cholera",
+      "dehydration_severity": "severe",
+      "expected_plan": "Plan C",
+      "should_reject_plan_b": true,
+      "should_reject_plan_a": true,
+      "should_change_behavior_from_case_05": true
+    },
+    "primary_disease": "Cholera",
+    "patient_facts": {
+      "dehydration_severity": "severe",
+      "severe_dehydration": true
+    },
+    "accepted_cards": [
+      {
+        "score": 0.577344536781311,
+        "card_id": "CHOLERA_ASSESS_001",
+        "disease": "Cholera",
+        "category": "dehydration_assessment",
+        "recommended_action": "Classify dehydration severity before selecting treatment. Severe dehydration is present with one or more danger signs such as lethargy or unconsciousness, absent or weak pulse, or respiratory distress, or with at least two severe dehydration findings such as sunken eyes, inability to drink or drinking poorly, and a skin pinch that returns very slowly. Some dehydration is considered when there are no danger signs and at least two findings such as irritability or restlessness, sunken eyes, rapid pulse, thirst with eager drinking, or a skin pinch that returns slowly. If the patient is awake and alert with normal pulse, normal thirst, eyes not sunken and normal skin pinch, classify as no dehydration.",
+        "advice": [],
+        "medication": [],
+        "conditions": [
+          "dehydration classification determines Plan A, Plan B, or Plan C"
+        ],
+        "missing_fields": [
+          "mental status",
+          "pulse quality",
+          "respiratory distress",
+          "ability to drink",
+          "thirst",
+          "sunken eyes",
+          "skin pinch findings"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 6
+        },
+        "applicability_reason": "No special applicability rule."
+      },
+      {
+        "score": 0.5489417314529419,
+        "card_id": "CHOLERA_DIAG_001",
+        "disease": "Cholera",
+        "category": "probable_diagnosis",
+        "recommended_action": "Consider suspected cholera according to outbreak context. Outside a declared cholera outbreak, a patient aged 2 years or older with acute watery diarrhoea and severe dehydration, or dying from acute watery diarrhoea, meets the suspected cholera case definition. During a declared cholera outbreak, any person presenting with or dying from acute watery diarrhoea meets the suspected case definition.",
+        "advice": [],
+        "medication": [],
+        "conditions": [
+          "case definition depends on whether a cholera outbreak has been declared",
+          "outside an outbreak, age and severe dehydration status are required"
+        ],
+        "missing_fields": [
+          "cholera outbreak status",
+          "patient age",
+          "presence or absence of severe dehydration"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        },
+        "applicability_reason": "No special applicability rule."
+      },
+      {
+        "score": 0.41056546568870544,
+        "card_id": "CHOLERA_ABX_001",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "Use antibiotics when the patient has severe dehydration, is pregnant, or is elderly. Preferred treatment is single-dose doxycycline; azithromycin is an alternative. Do not recommend antibiotics solely from this card if these applicability criteria are unknown.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Doxycycline",
+            "dose": "200 mg if under 12 years; 300 mg for older children and adults",
+            "route": "oral",
+            "frequency": "single dose"
+          },
+          {
+            "name": "Azithromycin",
+            "dose": "20 mg/kg if under 12 years; 1 g for older children and adults",
+            "route": "oral",
+            "frequency": "single dose",
+            "instructions": "alternative to doxycycline"
+          }
+        ],
+        "conditions": [
+          "antibiotics are indicated for severe dehydration, pregnancy, or elderly patients",
+          "drug and dose selection depends on age"
+        ],
+        "missing_fields": [
+          "dehydration severity",
+          "pregnancy status",
+          "whether patient is elderly",
+          "patient age"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 5
+        },
+        "applicability_reason": "Applicable to current patient."
+      },
+      {
+        "score": 0.38575923442840576,
+        "card_id": "CHOLERA_MGMT_001",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For severe dehydration, start intravenous Ringer's lactate immediately. For infants under 12 months, give 30 mL/kg in 1 hour followed by 70 mL/kg over the next 5 hours. For patients aged 12 months or older, give 30 mL/kg in 30 minutes followed by 70 mL/kg over the next 2.5 hours. Reassess at least every 15-30 minutes and give ORS to replace ongoing losses as soon as the patient can drink safely.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Ringer's lactate",
+            "dose": "100 mL/kg total",
+            "route": "intravenous",
+            "frequency": "30 mL/kg initially then 70 mL/kg",
+            "duration": "age-dependent infusion schedule",
+            "instructions": "under 12 months: 30 mL/kg in 1 hour then 70 mL/kg over 5 hours; 12 months or older: 30 mL/kg in 30 minutes then 70 mL/kg over 2.5 hours"
+          }
+        ],
+        "conditions": [
+          "use Plan C only when severe dehydration or shock criteria are met",
+          "age is required to determine infusion timing"
+        ],
+        "missing_fields": [
+          "patient age",
+          "body weight",
+          "dehydration severity",
+          "ability to drink safely"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 7
+        },
+        "applicability_reason": "Applicable to current patient."
+      }
+    ],
+    "rejected_cards": [
+      {
+        "score": 0.45560914278030396,
+        "card_id": "CHOLERA_MGMT_002",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For some dehydration, use Plan B with oral rehydration solution over 4 hours and reassess at least every hour. Give additional ORS to replace ongoing stool losses.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Oral Rehydration Solution (ORS)",
+            "dose": "age- and weight-based over 4 hours",
+            "route": "oral",
+            "frequency": "over 4 hours plus additional ORS for ongoing losses",
+            "instructions": "<4 months and <5 kg: 200-400 mL; 4-11 months and 5-8 kg: 400-600 mL; 12-23 months and 8-12 kg: 600-800 mL; 2-4 years and 12-16 kg: 800-1200 mL; 4-14 years and 16-30 kg: 1200-2200 mL; 15 years or older and 30 kg or more: 2200-4000 mL"
+          }
+        ],
+        "conditions": [
+          "Plan B applies when there are no danger signs and the patient meets criteria for some dehydration",
+          "ORS volume depends on age and weight"
+        ],
+        "missing_fields": [
+          "patient age",
+          "body weight",
+          "presence of danger signs",
+          "dehydration classification",
+          "ongoing stool losses"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 9
+        },
+        "applicability_reason": "Not applicable because dehydration_severity=severe"
+      },
+      {
+        "score": 0.44102194905281067,
+        "card_id": "CHOLERA_MGMT_003",
+        "disease": "Cholera",
+        "category": "medication_and_management",
+        "recommended_action": "For patients with no signs of dehydration, use Plan A. Give ORS after each loose stool according to age and continue oral hydration. For patients under 24 months give 50-100 mL after each loose stool; for ages 2-9 years give 100-200 mL; for patients aged 10 years or older give as much as wanted.",
+        "advice": [],
+        "medication": [
+          {
+            "name": "Oral Rehydration Solution (ORS)",
+            "dose": "age-based after each loose stool",
+            "route": "oral",
+            "frequency": "after each loose stool",
+            "instructions": "<24 months: 50-100 mL; 2-9 years: 100-200 mL; 10 years or older: as much as wanted"
+          },
+          {
+            "name": "Zinc",
+            "dose": "10 mg if under 6 months; 20 mg if over 6 months",
+            "route": "oral",
+            "frequency": "once daily",
+            "duration": "10 days",
+            "instructions": "pediatric recommendation from the WHO tool"
+          }
+        ],
+        "conditions": [
+          "Plan A applies only when no dehydration is present",
+          "ORS amount depends on age"
+        ],
+        "missing_fields": [
+          "patient age",
+          "dehydration status",
+          "ability to drink"
+        ],
+        "source": {
+          "title": "Clinical tools for cholera treatment facilities",
+          "version": "WHO 2024",
+          "pdf_page": 11
+        },
+        "applicability_reason": "Not applicable because dehydration_severity=severe"
+      }
+    ],
+    "differential_diagnoses": []
+  }
+]

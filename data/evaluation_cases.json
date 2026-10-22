@@ -1,0 +1,85 @@
+[
+    {
+      "case_id": "CASE_01_DENGUE",
+      "case_type": "ordinary",
+      "protocol": "Dengue",
+      "patient_text": "A 24-year-old patient has high fever for 3 days, severe headache, pain behind the eyes, body ache and rash. No vomiting, bleeding or altered consciousness is reported.",
+      "expected_checklist": {
+        "probable_diagnosis": "Dengue",
+        "should_retrieve_diagnosis_card": true,
+        "should_consider_warning_signs": true,
+        "should_recommend_investigation": true,
+        "must_not_confirm_without_supported_evidence": true
+      }
+    },
+  
+    {
+      "case_id": "CASE_02_HYPERTENSION",
+      "case_type": "ordinary",
+      "protocol": "Hypertension",
+      "patient_text": "A 55-year-old patient has repeated blood pressure readings around 150/95 mmHg over several visits. There are no acute emergency symptoms.",
+      "expected_checklist": {
+        "probable_diagnosis": "Hypertension",
+        "should_retrieve_diagnosis_card": true,
+        "should_recommend_baseline_investigations": true,
+        "should_not_treat_as_single_reading_confirmation": true
+      }
+    },
+  
+    {
+      "case_id": "CASE_03_CHOLERA",
+      "case_type": "ordinary",
+      "protocol": "Cholera",
+      "patient_text": "A 40-year-old patient has acute watery diarrhoea, a very weak pulse, sunken eyes and is unable to drink properly. The patient appears severely dehydrated.",
+      "expected_checklist": {
+        "probable_diagnosis": "Cholera",
+        "dehydration_severity": "severe",
+        "expected_plan": "Plan C",
+        "should_reject_plan_b": true,
+        "should_reject_plan_a": true
+      }
+    },
+  
+    {
+      "case_id": "CASE_04_CHIKUNGUNYA",
+      "case_type": "ordinary",
+      "protocol": "Chikungunya",
+      "patient_text": "A 32-year-old patient developed sudden high fever, severe pain in multiple joints, headache and skin rash 3 days ago.",
+      "expected_checklist": {
+        "probable_diagnosis": "Chikungunya",
+        "should_include_dengue_as_differential": true,
+        "should_recommend_day_appropriate_testing": true,
+        "should_avoid_nsaid_until_dengue_excluded": true
+      }
+    },
+  
+    {
+      "case_id": "CASE_05_INCOMPLETE",
+      "case_type": "ambiguous_incomplete",
+      "protocol": "Cholera",
+      "patient_text": "A 35-year-old patient presents with acute watery diarrhoea that started today and reports several loose stools.",
+      "expected_checklist": {
+        "probable_diagnosis": "Cholera",
+        "missing_information": [
+          "dehydration severity"
+        ],
+        "should_not_select_plan_a_b_or_c_without_more_information": true,
+        "should_not_guess_antibiotic_applicability": true
+      }
+    },
+  
+    {
+      "case_id": "CASE_06_MODIFIED",
+      "case_type": "modified_prerequisite",
+      "protocol": "Cholera",
+      "patient_text": "A 35-year-old patient presents with acute watery diarrhoea. The patient has a weak pulse, sunken eyes, cannot drink properly and has severe dehydration.",
+      "expected_checklist": {
+        "probable_diagnosis": "Cholera",
+        "dehydration_severity": "severe",
+        "expected_plan": "Plan C",
+        "should_reject_plan_b": true,
+        "should_reject_plan_a": true,
+        "should_change_behavior_from_case_05": true
+      }
+    }
+  ]

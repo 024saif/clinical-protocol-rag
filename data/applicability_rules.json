@@ -1,0 +1,36 @@
+{
+    "CHOLERA_MGMT_001": {
+      "requires": {
+        "dehydration_severity": ["severe"]
+      },
+      "description": "Plan C is applicable only when severe dehydration or shock is present."
+    },
+  
+    "CHOLERA_MGMT_002": {
+      "requires": {
+        "dehydration_severity": ["some"]
+      },
+      "excludes": {
+        "dehydration_severity": ["severe"]
+      },
+      "description": "Plan B is applicable to some dehydration and must not be used when severe dehydration is present."
+    },
+  
+    "CHOLERA_MGMT_003": {
+      "requires": {
+        "dehydration_severity": ["none"]
+      },
+      "excludes": {
+        "dehydration_severity": ["some", "severe"]
+      },
+      "description": "Plan A is applicable only when there are no signs of dehydration."
+    },
+"CHOLERA_ABX_001": {
+  "requires_any": {
+    "severe_dehydration": true,
+    "pregnancy": true,
+    "elderly": true
+  },
+  "description": "Antibiotics are applicable when the patient has severe dehydration, is pregnant, or is elderly."
+}
+  }

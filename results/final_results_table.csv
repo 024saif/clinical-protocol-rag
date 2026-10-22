@@ -1,0 +1,13 @@
+﻿case_id,mode,expected_behavior,citation_evidence,restrictions_preserved,missing_information_handled,checks_passed,elapsed_seconds,failure_note,source_reference
+CASE_01_DENGUE,Baseline,Pass,Pass,Pass,Pass,4/4,0.1432,None,"Bangladesh Dengue Guideline, assigned PDF pp. 26-28, 37-41, 45-48"
+CASE_01_DENGUE,Improved,Pass,Pass,Pass,Pass,4/4,0.0309,None,"Bangladesh Dengue Guideline, assigned PDF pp. 26-28, 37-41, 45-48"
+CASE_02_HYPERTENSION,Baseline,Pass,Pass,Pass,Pass,4/4,0.028,None,"Bangladesh Hypertension Guideline 2023, assigned PDF pp. 46-52, 64-65"
+CASE_02_HYPERTENSION,Improved,Pass,Pass,Pass,Pass,4/4,0.0264,None,"Bangladesh Hypertension Guideline 2023, assigned PDF pp. 46-52, 64-65"
+CASE_03_CHOLERA,Baseline,Fail,Pass,Fail,Pass,2/4,0.0304,Top-k retrieval returned treatment cards for incompatible dehydration categories instead of restricting management to the severe-dehydration pathway.,"WHO Cholera Clinical Tools 2024, PDF pp. 5-7"
+CASE_03_CHOLERA,Improved,Pass,Pass,Pass,Pass,4/4,0.031,None,"WHO Cholera Clinical Tools 2024, PDF pp. 5-7"
+CASE_04_CHIKUNGUNYA,Baseline,Pass,Pass,Fail,Pass,3/4,0.0269,"Semantic top-k retrieval introduced less-applicable cross-disease cards, showing weak disease-context control.","Bangladesh Chikungunya Guideline 2017, assigned PDF pp. 11-22, 26-27"
+CASE_04_CHIKUNGUNYA,Improved,Pass,Pass,Pass,Pass,4/4,0.0247,None,"Bangladesh Chikungunya Guideline 2017, assigned PDF pp. 11-22, 26-27"
+CASE_05_INCOMPLETE,Baseline,Fail,Pass,Fail,Fail,1/4,0.0245,Treatment cards were returned despite missing dehydration severity and other applicability information.,"WHO Cholera Clinical Tools 2024, PDF pp. 5-7"
+CASE_05_INCOMPLETE,Improved,Pass,Pass,Pass,Pass,4/4,0.0276,None,"WHO Cholera Clinical Tools 2024, PDF pp. 5-7"
+CASE_06_MODIFIED,Baseline,Fail,Pass,Fail,Pass,2/4,0.0282,The severe-dehydration modification did not reliably remove incompatible Plan A and Plan B treatment cards.,"WHO Cholera Clinical Tools 2024, PDF pp. 5-7"
+CASE_06_MODIFIED,Improved,Pass,Pass,Pass,Pass,4/4,0.0269,None,"WHO Cholera Clinical Tools 2024, PDF pp. 5-7"

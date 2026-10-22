@@ -1,0 +1,102 @@
+digraph Clinical_Protocol_RAG {
+	bgcolor=white nodesep=0.55 pad=0.25 rankdir=LR ranksep=0.75 splines=ortho
+	node [fontname=Arial fontsize=11 margin="0.15,0.10" shape=box style="rounded,filled"]
+	edge [arrowsize=0.8 color="#4A6661" fontname=Arial fontsize=9 penwidth=1.4]
+	subgraph cluster_protocol {
+		color="#7AAFA7" fontname="Arial Bold" label="1. Protocol Preparation" style=rounded
+		protocols [label="Four Clinical Protocol PDFs
+• Dengue
+• Hypertension
+• Cholera
+• Chikungunya" color="#7AAFA7" fillcolor="#DDEDEA"]
+		extraction [label="Assigned Page Extraction
+Preserve tables, conditions,
+exceptions and source pages" color="#7AAFA7" fillcolor="#EAF4F2"]
+		cards [label="Canonical Recommendation Cards
+JSON / JSONL
+Symptoms • prerequisites • actions
+exclusions • missing info • evidence" color="#7AAFA7" fillcolor="#DDEDEA"]
+		protocols -> extraction
+		extraction -> cards
+	}
+	subgraph cluster_rag {
+		color="#789FBA" fontname="Arial Bold" label="2. RAG Storage and Indexing" style=rounded
+		embedding [label="Sentence-Transformer Embeddings
+all-MiniLM-L6-v2" color="#789FBA" fillcolor="#E3EDF4"]
+		faiss [label="FAISS Vector Index
++ Metadata" color="#789FBA" fillcolor="#DCEAF3"]
+		embedding -> faiss
+	}
+	cards -> embedding
+	subgraph cluster_input {
+		color="#A28BC2" fontname="Arial Bold" label="3. Patient-Specific Input" style=rounded
+		patient_input [label="Editable Patient Input
+Symptoms • duration • age • sex
+history • medicines • allergies
+findings • vitals" color="#A28BC2" fillcolor="#EEE8F5"]
+		normalization [label="Input Normalization
+Unit conversion and
+patient context assembly" color="#A28BC2" fillcolor="#F3EEF8"]
+		patient_input -> normalization
+	}
+	subgraph cluster_reasoning {
+		color="#D09A62" fontname="Arial Bold" label="4. Retrieval and Clinical Applicability" style=rounded
+		retrieval [label="Semantic Retrieval
+Top matching canonical cards" color="#D09A62" fillcolor="#F7EBDD"]
+		primary_context [label="Primary Disease Context
+Identify most supported
+clinical protocol context" color="#D09A62" fillcolor="#F9EFE3"]
+		applicability [label="Applicability-Aware Filter
+Prerequisites • exclusions
+patient-specific restrictions" color="#D09A62" fillcolor="#F7E6D5" penwidth=2.3]
+		missing_info [label="Missing-Information Check
+Block unsupported treatment
+instead of guessing" color="#D09A62" fillcolor="#FBEFE3" penwidth=2.3]
+		retrieval -> primary_context
+		primary_context -> applicability
+		applicability -> missing_info
+	}
+	faiss -> retrieval
+	normalization -> retrieval
+	baseline [label="Baseline Mode
+Top-k semantic cards
+without applicability filtering" color="#BE7777" fillcolor="#FCE3E3"]
+	retrieval -> baseline [label=Baseline]
+	subgraph cluster_output {
+		color="#63A17E" fontname="Arial Bold" label="5. Recommendation Generation and Interface" style=rounded
+		generator [label="Structured Recommendation Assembly
+Probable diagnosis
+Investigations
+Medication planning
+Advice
+Evidence" color="#63A17E" fillcolor="#DFF0E5"]
+		ui [label="Streamlit Interface
+Clinical analysis
+Professional report
+Clinical slip
+Printable form" color="#63A17E" fillcolor="#D8EBDF"]
+		evidence [label="Evidence Display
+Card ID • protocol title
+version • PDF page" color="#63A17E" fillcolor="#E6F3EA"]
+		generator -> ui
+		generator -> evidence
+	}
+	missing_info -> generator [label=Improved]
+	baseline -> generator [label=Baseline]
+	subgraph cluster_future {
+		color="#8A8A8A" fontname="Arial Bold" label="6. Future Integration" style="rounded,dashed"
+		ner [label="Future NER Input
+Automatically extract symptoms,
+vitals, medicines and entities" color="#8A8A8A" fillcolor="#F3F3F3" style="rounded,filled,dashed"]
+		doctor_feedback [label="Doctor Feedback / Acceptance
+Accept • reject • modify
+recommendations" color="#8A8A8A" fillcolor="#F3F3F3" style="rounded,filled,dashed"]
+		prescription [label="Future Prescription Assembly
+Clinician-approved recommendations
+to prescription workflow" color="#8A8A8A" fillcolor="#F3F3F3" style="rounded,filled,dashed"]
+	}
+	ner -> normalization [label=future style=dashed]
+	ui -> doctor_feedback [label=future style=dashed]
+	doctor_feedback -> prescription [label=future style=dashed]
+	cards -> evidence [label="source IDs + page traceability" style=dashed]
+}

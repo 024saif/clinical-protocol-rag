@@ -1,0 +1,128 @@
+{
+  "summary": {
+    "number_of_cases": 6,
+    "checks_per_case": 4,
+    "possible_checks_per_mode": 24,
+    "baseline_passed": 16,
+    "baseline_percentage": 66.67,
+    "improved_passed": 24,
+    "improved_percentage": 100.0,
+    "absolute_improvement_percentage_points": 33.33
+  },
+  "cases": [
+    {
+      "case_id": "CASE_01_DENGUE",
+      "baseline": {
+        "expected_behavior": true,
+        "citation_evidence": true,
+        "restrictions_preserved": true,
+        "missing_information_handled": true,
+        "checks_passed": 4,
+        "total_checks": 4
+      },
+      "improved": {
+        "expected_behavior": true,
+        "citation_evidence": true,
+        "restrictions_preserved": true,
+        "missing_information_handled": true,
+        "checks_passed": 4,
+        "total_checks": 4
+      }
+    },
+    {
+      "case_id": "CASE_02_HYPERTENSION",
+      "baseline": {
+        "expected_behavior": true,
+        "citation_evidence": true,
+        "restrictions_preserved": true,
+        "missing_information_handled": true,
+        "checks_passed": 4,
+        "total_checks": 4
+      },
+      "improved": {
+        "expected_behavior": true,
+        "citation_evidence": true,
+        "restrictions_preserved": true,
+        "missing_information_handled": true,
+        "checks_passed": 4,
+        "total_checks": 4
+      }
+    },
+    {
+      "case_id": "CASE_03_CHOLERA",
+      "baseline": {
+        "expected_behavior": false,
+        "citation_evidence": true,
+        "restrictions_preserved": false,
+        "missing_information_handled": true,
+        "checks_passed": 2,
+        "total_checks": 4
+      },
+      "improved": {
+        "expected_behavior": true,
+        "citation_evidence": true,
+        "restrictions_preserved": true,
+        "missing_information_handled": true,
+        "checks_passed": 4,
+        "total_checks": 4
+      }
+    },
+    {
+      "case_id": "CASE_04_CHIKUNGUNYA",
+      "baseline": {
+        "expected_behavior": true,
+        "citation_evidence": true,
+        "restrictions_preserved": false,
+        "missing_information_handled": true,
+        "checks_passed": 3,
+        "total_checks": 4
+      },
+      "improved": {
+        "expected_behavior": true,
+        "citation_evidence": true,
+        "restrictions_preserved": true,
+        "missing_information_handled": true,
+        "checks_passed": 4,
+        "total_checks": 4
+      }
+    },
+    {
+      "case_id": "CASE_05_INCOMPLETE",
+      "baseline": {
+        "expected_behavior": false,
+        "citation_evidence": true,
+        "restrictions_preserved": false,
+        "missing_information_handled": false,
+        "checks_passed": 1,
+        "total_checks": 4
+      },
+      "improved": {
+        "expected_behavior": true,
+        "citation_evidence": true,
+        "restrictions_preserved": true,
+        "missing_information_handled": true,
+        "checks_passed": 4,
+        "total_checks": 4
+      }
+    },
+    {
+      "case_id": "CASE_06_MODIFIED",
+      "baseline": {
+        "expected_behavior": false,
+        "citation_evidence": true,
+        "restrictions_preserved": false,
+        "missing_information_handled": true,
+        "checks_passed": 2,
+        "total_checks": 4
+      },
+      "improved": {
+        "expected_behavior": true,
+        "citation_evidence": true,
+        "restrictions_preserved": true,
+        "missing_information_handled": true,
+        "checks_passed": 4,
+        "total_checks": 4
+      }
+    }
+  ]
+}
